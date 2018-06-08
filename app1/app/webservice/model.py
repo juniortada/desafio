@@ -11,9 +11,6 @@ class Cidade(Base):
     nome = Column(String)
     uf = Column(String(2))
 
-    def __repr__(self):
-        return self.nome
-
 
 class Endereco(Base):
     __tablename__ = 'endereco'

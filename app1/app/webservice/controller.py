@@ -5,7 +5,7 @@ from app import log
 from app.db import session_scope
 
 
-# Define the blueprint
+# Define o blueprint
 webservice = Blueprint('webservice', __name__)
 
 
