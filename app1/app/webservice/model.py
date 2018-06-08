@@ -26,17 +26,18 @@ class Endereco(Base):
     # many-to-one endereços-cidade
     cidade_id = Column(Integer, ForeignKey('cidade.id'))
     cidade = relationship('Cidade', backref='enderecos')
-    # one-to-may cliente-endereços
+    # many-to-one endereços-cliente
     cliente_id = Column(Integer, ForeignKey('cliente.id'))
+    cliente = relationship('Cliente', backref='enderecos')
 
 
 class Telefone(Base):
     __tablename__ = 'telefone'
 
     numero = Column(String)
-    descricao = Column(String)
-    # one-to-may cliente-telefones
+    # many-to-one telefones-cliente
     cliente_id = Column(Integer, ForeignKey('cliente.id'))
+    cliente = relationship('Cliente', backref='telefones')
 
 
 class Divida(Base):
@@ -46,8 +47,9 @@ class Divida(Base):
     valor = Column(DECIMAL(10,2))
     juros = Column(DECIMAL(10,2))
     pago = Column(Boolean, default=False)
-    # one-to-may cliente-lista_dividas
+    # many-to-one telefones-cliente
     cliente_id = Column(Integer, ForeignKey('cliente.id'))
+    cliente = relationship('Cliente', backref='lista_dividas')
 
 
 class Cliente(Base):
@@ -59,9 +61,3 @@ class Cliente(Base):
     nascimento = Column(DateTime)
     profissao = Column(String)
     email = Column(String)
-    # many-to-one endereços-cliente
-    enderecos = relationship("Endereco", back_populates="cliente")
-    # many-to-one telefones-cliente
-    telefones = relationship("Telefone", back_populates="cliente")
-    # many-to-one lista_dividas-cliente
-    lista_dividas = relationship("Divida", back_populates="cliente")
