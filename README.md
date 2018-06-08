@@ -1,9 +1,9 @@
 # Desafio
-Código de apresentação
+Os código dos servidore e os bancos de dados estão hospedados em serviços AWS.
 
 ## Instalação e Dependências
 
-- AWS (Apenas Consulta Dados)
+- AWS
 
 Para rodar a consulta aos dados do webservice é necessário apenas
 o python 3.6 e a lib requests.
