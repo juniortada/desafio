@@ -28,7 +28,7 @@ def alterar_config():
     cfg = {
         'DEBUG': str(True),
         'CRIAR_DB': str(False),
-        'DB_URI': 'postgresql+psycopg2://tadasoftware:1234@localhost/base_b'
+        'DB_URI': 'postgresql+psycopg2://postgres:1234@localhost/base_b'
     }
     with open(filel, 'w') as arq:
         arq.write('config = '+json.dumps(cfg, indent=2))
