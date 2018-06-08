@@ -39,6 +39,6 @@ def consultar_dividas():
                 lista_dividas = [{
                     "id":i.id, 
                     "vencimento":i.vencimento,
-                    "valor":i.valor,
+                    "valor":str(i.valor),
                     "pago":i.pago} for i in cliente.lista_dividas]
             return jsonify(lista_dividas=lista_dividas)

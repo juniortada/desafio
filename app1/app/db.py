@@ -113,5 +113,5 @@ class Dao(object):
         :param erro: Exception que causou o erro.
         :return:
         """
-        log.exception(msg + str(e))
+        log.exception(msg + str(erro))
         flash(msg, 'alert-danger')

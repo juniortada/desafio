@@ -6,7 +6,7 @@ _local = False
 
 # Endereço dos webservices
 LOCALHOST = 'http://0.0.0.0:8090/'
-AWS = 'http://54.233.92.199:8090/'
+AWS = 'http://18.231.77.148:8090/'
 
 if _local:
     SERVIDOR = LOCALHOST

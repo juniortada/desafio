@@ -19,4 +19,4 @@ class DaoCliente(Dao):
         try:
             return self.session.query(Cliente).filter_by(cpf=cpf).first()
         except Exception as e:
-            self._erro('Erro ao Buscar por CPF!', str(e))
+            self._erro('Erro ao Buscar por CPF!', e)
