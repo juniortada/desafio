@@ -4,4 +4,4 @@ from sanic.response import json
 @app.route('/')
 @app.route('index')
 async def test(request):
-    return json({'hello': 'world'})
+    return json({'teste': 'app3'})

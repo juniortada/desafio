@@ -1,5 +1,5 @@
 # Desafio
-Os código dos servidore e os bancos de dados estão hospedados em serviços AWS.
+Os código dos servidores e os bancos de dados estão hospedados em serviços AWS.
 
 ## Instalação e Dependências
 
@@ -12,15 +12,16 @@ Para Executar os testes:
 ```sh
 python3 app1/teste_app1.py
 python3 app2/teste_app2.py
+python3 app3/teste_app3.py
 ```
 
 
 - Servidor Local
 
 Para rodar todos os aplicativos e servidores, além do python 3.6 
-é necessário instalar flask, sanic, sqlalchemy, postgreSQL, requests e psycopg2.
+é necessário instalar flask, sanic, sqlalchemy, postgreSQL, requests, psycopg2 e redis.
 
-PostgreSQL e psycopg2 devem ser instalados pelo instalador de pacotes do sistema.
+PostgreSQL, psycopg2 e redis devem ser instalados pelo instalador de pacotes do sistema.
 As outras dependências, podem ser instaladas por pip.
 
 ```sh
@@ -32,6 +33,7 @@ Para Executar os servidores do webservices:
 ```sh
 python3 app1/app/run.py
 python3 app2/app/run.py
+python3 app3/app/run.py
 ```
 
 Agora é preciso editar o arquivo config de cada app,
@@ -49,4 +51,5 @@ no arquivo de app1/teste_app1.py e app2/teste_app2.py
 ```sh
 python3 app1/teste_app1.py
 python3 app2/teste_app2.py
+python3 app3/teste_app3.py
 ```

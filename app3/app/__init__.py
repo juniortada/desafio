@@ -1,5 +1,6 @@
 # Author: Junior Tada
 from sanic import Sanic
+import redis
 
 # Define app Sanic
 app = Sanic()
