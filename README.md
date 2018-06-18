@@ -1,19 +1,7 @@
 # Desafio
-Os código dos servidores e os bancos de dados estão hospedados em serviços AWS.
+Código exemplo
 
 ## Instalação e Dependências
-
-- AWS
-
-Para rodar a consulta aos dados do webservice é necessário apenas
-o python 3.6 e a lib requests.
-Para Executar os testes:
-
-```sh
-python3 app1/teste_app1.py
-python3 app2/teste_app2.py
-python3 app3/teste_app3.py
-```
 
 
 - Servidor Local

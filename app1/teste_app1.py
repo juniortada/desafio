@@ -2,7 +2,7 @@
 import requests
 
 # Define se o teste será realizado no servidor local ou no servidor AWS
-_local = False
+_local = True
 
 # Endereço dos webservices
 LOCALHOST = 'http://0.0.0.0:8080/'
